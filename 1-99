@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+void main()
+{
+	/*Дано натуральне число а(a < 100).Напишіть програму,
+	яка виводить на екран кількість цифр у цьому числі
+	і суму цих цифр*/
+	int digit;
+	cout << "Enter digit:" << endl;
+	cin >> digit;
+
+	if (digit >9)
+	{
+		cout << "two digit" << endl;
+		cout << "summ: " << digit / 10 << "+" <<digit%10<< "=" << digit / 10 + digit % 10 << endl;
+	}
+	else
+	{
+		cout << "one digit" << endl;
+		cout << digit << endl;
+	}
+
+}
